@@ -15,7 +15,7 @@ npm install
 npm run dev
 ```
 
-Tech Stack and Limitations
+Tech Stack
 ---
 Per the recommended practices, this project has been developed using Vue and TailwindCSS.
 
