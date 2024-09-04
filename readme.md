@@ -1,40 +1,34 @@
 Introduction
 ---
-Thanks for taking the time to complete this frontend technical assessment. We will be focusing on software quality (scalability, readability, maintainability, etc.) and your eye for detail. You may include any libraries, but Vue.js is preferred and jQuery is not recommended. Along with following best practices, bonus points for following our [coding guidelines](https://github.com/mindarc/frontend-assessment/wiki/Coding-guidelines). 
+Hello! Thank you for taking the time to review this assessment. Please feel free to reach out if there are any questions.
 
-Exercise 1
+Preview Link
 ---
-Build a responsive page based on the designs.
+TBD
 
-##### Requirements
-1. Match the designs exactly.
-2. Needs to be responsive.
-
-##### Designs
-* exercise1-desktop.png
-* exercise1-mobile.png
-
-##### Assets
-* Desktop banner - https://via.placeholder.com/1920x650
-* Mobile banner - https://via.placeholder.com/600x600
-* Content images - https://via.placeholder.com/400x300
-
-Exercise 2
+Installation
 ---
-Read the `data.json` file and display the data as tabs on desktop and an accordion on mobile.
+This project can be installed by navigating to the frontend-assessment subfolder, and installing/running using npm.
+```
+cd frontend-assessment
+npm install
+npm run dev
+```
 
-##### Requirements
-1. Display data in tabs on desktop.
-2. Display data in an accordion on mobile.
-3. Only 1 accordion/tab should be open at a time.
-4. Open the first accordion/tab on load.
-5. If the open accordion is selected, close it.
-
-###### Bonus points
-* Improve the user experience with meaningful animations/transitions.
-* Design and styling.
-* Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
-
-Submission
+Tech Stack and Limitations
 ---
-We recommend submitting your completed assessment as a forked repository. Please replace README content with instructions and relevant documentation.
+Per the recommended practices, this project has been developed using Vue and TailwindCSS.
+
+Notes
+---
+- I developed exercise 1 as close to the provided designs as possible. However, it seems as though the images provided (from placeholder.com) have been changed since the design brief was created (there is no watermark in bottom right corner anymore). As such, I was unable to decipher whether the stretching on the images was intended to be implemented by the dev in CSS, or was apart of the previous placeholder. For the time being, the image was implemented with no stretching. 
+- I have added links between the two exercises in a footer at the bottom of each page for your convenience. I hope this is okay! (This is not intended to be part of the assessed designs)
+
+Bonus Question
+---
+When adding the strings together, the following occurs: 
+1. `'b' + 'a'` = 'ba'
+2. `+ + 'a'` results in NaN (Not a Number, as it's not a valid expression)
+3. Finally, `+ 'a'`  makes it total `'baNaNa'`. 
+
+The result is then converted to lowercase by using `.toLowerCase()`, thus giving 'banana'
